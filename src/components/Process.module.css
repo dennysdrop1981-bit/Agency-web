@@ -1,0 +1,52 @@
+.processSection {
+  padding: 6rem 2rem;
+  background-color: var(--bg-dark);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.step {
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 1rem;
+  border-top: 2px solid var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(180deg, rgba(212, 255, 62, 0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(212, 255, 62, 0.2);
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.stepDesc {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}

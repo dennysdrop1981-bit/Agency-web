@@ -1,0 +1,45 @@
+.casesSection {
+  padding: 6rem 2rem;
+  background-color: var(--bg-dark);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 3rem 2rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 1rem;
+  text-align: center;
+  border-bottom: 3px solid rgba(212, 255, 62, 0);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  transform: translateY(-5px);
+  border-bottom-color: var(--accent);
+}
+
+.metric {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
